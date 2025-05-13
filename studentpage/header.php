@@ -24,12 +24,14 @@ if (!$info) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Header</title>
-    <link rel="stylesheet" href="header.css">
+    <!-- <link rel="stylesheet" href="header.css"> -->
+    <link rel="stylesheet" href="/ravenshaw/studentpage/header.css">
+
 </head>
 <body>
     <header>
         <div class="logo-container">
-            <img src="logo.jpeg" alt="Logo" class="logo">
+            <img src="/ravenshaw/studentpage/logo.jpeg" alt="Logo" class="logo">
         </div>
         <div class="info-container">
             <div class="student-info">
@@ -39,7 +41,7 @@ if (!$info) {
                 <p id="rollNo"><b>Roll Number:</b> <?php echo htmlspecialchars($info['roll_number']); ?></p>
             </div>
             <div class="actions">
-                <form method="POST" action="logout.php">
+                <form method="POST" action="/ravenshaw/studentpage/logout.php">
                     <button type="submit" id="logoutButton">Logout</button>
                 </form>
                 <!-- <button id="changePassword" onclick="openChangePasswordModal()">Change Password</button> -->
@@ -47,18 +49,19 @@ if (!$info) {
         </div> 
         <nav class="navbar">
             <ul>
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="notes.html">Notes</a></li>
-                <li><a href="inbox.html">Inbox</a></li>
-                <li><a href="compose.html">Compose</a></li>
+                <li><a href="/ravenshaw/studentpage/profile.php">Profile</a></li>
+                <li><a href="/ravenshaw/teacherpage/view_notes.php">Notes</a></li>
+                <li><a href="/ravenshaw/studentpage/inbox.php">Inbox</a></li>
+                <li><a href="/ravenshaw/studentpage/compose.php">Compose</a></li>
                 <li class="dropdown">
                     <a href="#">Scorecard</a>
                     <ul class="dropdown-content">
-                        <li><a href="internal.php">Internal</a></li>
-                        <li><a href="semester.php">Semester</a></li>
+                        <li><a href="/ravenshaw/studentpage/internal_marks.php">Internal</a></li>
+                        <li><a href="/ravenshaw/adminpage/student/view-marks.php">Semester</a></li>
                     </ul>
                 </li>
-                <li><a href="notice.html">Notice</a></li>
+                <!-- <li><a href="notice.html">Notice</a></li> -->
+                <li><a href="/ravenshaw/studentpage/student-notice.php">Notice</a></li>
                 <li class="dropdown">
                     <a href="#">Examination</a>
                     <ul class="dropdown-content">
@@ -68,8 +71,8 @@ if (!$info) {
                         <li><a href="#">Recheck</a></li>
                     </ul>
                 </li>
-                <li><a href="anti-ragging.html">Anti Ragging Cell</a></li>
-                <li><a href="../tru_main/self_assesment/counsellor.html">Talk to Counsellor</a></li>
+                <li><a href="/ravenshaw/studentpage/anti-ragging.html">Anti Ragging Cell</a></li>
+                <li><a href="/ravenshaw/studentpage/self_assesment/counsellor.html">Talk to Counsellor</a></li>
             </ul>
         </nav>
 
