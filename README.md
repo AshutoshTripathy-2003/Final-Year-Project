@@ -2,7 +2,8 @@
 
 This repository contains the source code for the Academic Management System developed for Ravenshaw University, Mahanadi Campus. The system aims to streamline the administration of student, faculty, and course management. It provides features for both admin and student users, supporting functionalities like student registration, mark entry, profile management, internal communications, and more.
 
-📂 Folder Structure
+📂 Folder Structure:
+
 adminpage/: Contains the admin panel with functionalities to manage students, upload marks, and promote students.
 
 studentpage/: Includes pages for student login, profile management, and accessing study materials.
